@@ -43,7 +43,7 @@ img {
     margin: 0 auto;
 }
 
-.menu {
+.nav {
     padding-top: 33px;
 }
 
@@ -52,12 +52,12 @@ img {
     justify-content: space-between;
 }
 
-.menu a {
+.nav a {
     font-weight: bold;
     text-decoration: none;
     color: #828282;
 }
 
-.menu-list a:hover{
+.nav a:hover{
     color: #070707
 }
