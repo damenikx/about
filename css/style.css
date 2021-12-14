@@ -77,17 +77,27 @@ input[type="checkbox"] {
     display: none;
 }
 nav label {    
+    position: absolute;
+    right: 0;
     display: none;
-    border: 1px solid #fff;   
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: 0.3s;
+}
+.burger-lines {
+    width: 33px;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.burger-line {
+    width: 100%;
+    height: 3.84px;
+    background-color: black
 }
 
 @media screen and (max-width: 500px) {
     
     nav label{
-         display: inline-block;
+        display: inline-block;
     }
     nav > ul {
         display: none;
