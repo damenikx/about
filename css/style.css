@@ -36,3 +36,28 @@ img {
     background-color: transparent;
     cursor: pointer;
 }
+
+.container {
+    max-width: 973px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding-top: 33px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #828282;
+}
+
+.menu-list a:hover{
+    color: #070707
+}
