@@ -54,21 +54,51 @@ img {
     margin: 0 auto;
 }
 
-.nav {
+nav {
     padding-top: 33px;
 }
 
-.menu-list {
+nav > ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+nav a{
+    color: #828282;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    color: black;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+nav label {    
+    display: none;
+    border: 1px solid #fff;   
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 500px) {
+    
+    nav label{
+         display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+    
+}
+.hero-about {
     display: flex;
     justify-content: space-between;
 }
 
-.nav a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #828282;
-}
-
-.nav a:hover{
-    color: #070707
-}
